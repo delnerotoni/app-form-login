@@ -1,6 +1,15 @@
 {% extends 'main.html' %}
 
 {% block content %}
-    <a href="/create/">Cadastro de Usuários</a><br>
-    <a href="/painel/">Painel de Login</a><br>
+    <div class="col-2 mt-2 m-auto">
+
+             <form method="get" action="/create/"><br>
+     <button type="submit">Cadastro de usuários</button>
+             </form>
+
+             <form method="get" action="/painel/"><br>
+     <button type="submit">Painel de login</button>
+            </form>
+    </div>
+
 {% endblock %}
